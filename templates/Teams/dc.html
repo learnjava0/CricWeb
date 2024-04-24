@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{% block title %}{% endblock title %}
+{% block body %}
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="" alt="">
+            </div>
+            <div class="col-sm-4">
+                <b>Delhi Capitals</b>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="static/images/DC.png" alt="" style="height:200px;">
+                </div>
+                <div class="col-sm-6">
+                    <h1 style="margin-top:65px; color:black;"><b>DELHI CAPITALS</b></h1>
+                </div>
+            </div>
+        </div>
+        
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+            <table class="table table-striped">
+              <tbody>
+                <tr>
+                  <td><span style="color: blue;"><b>OWNER</b></span></td>
+                  <td>GMR Sports Pvt. Ltd & JSW Sports Pvt Ltd</td>
+                </tr>
+                <tr>
+                  <td><span style="color: blue;"><b>COACH</b></span></td>
+                  <td>RICKY PONTING</td>
+                </tr>
+                <tr>
+                  <td><span style="color: blue;"><b>VENUE</b></span></td>
+                  <td>Arun Jaitley Stadium</td>
+                </tr>
+                <tr>
+                  <td><span style="color: blue;"><b>CAPTAIN</b></span></td>
+                  <td>Rishabh Pant</td>
+                </tr>
+                <tr>
+                    <td> <img src="static/images/team-trophy.png" alt=""></td>
+                    <td></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    
+<div class="container-fluid" style="text-align: center;">
+    <h1 style="margin-top: 50px;">TEAM PLAYERS</h1>
+</div>
+
+
+    <style>
+        .player-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .player-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .player-info {
+            font-family: Arial, sans-serif;
+        }
+        .player-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .player-role {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+
+    <div class="player-card">
+        <img src="static/images/dc player/rishabh pant.webp" alt="Player 1">
+        <div class="player-info">
+            <p class="player-name">Rishabh Pant</p>
+            <p class="player-role">Wicketkeeper&Batter</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/david warner.webp" alt="Player 2">
+        <div class="player-info">
+            <p class="player-name">DAVID WARNER</p>
+            <p class="player-role">Batter</p>
+             <div class="card-body">
+                    <p class="card-text"></p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">View Details</button>
+                </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/prithvi shaw.webp" alt="Player 3">
+        <div class="player-info">
+            <p class="player-name">PRITHVI SHAW</p>
+            <p class="player-role">Batter</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/jake fraser-mcgurk.webp" alt="Player 4">
+        <div class="player-info">
+            <p class="player-name">JAKE FRAZER-MCGURK</p>
+            <p class="player-role">Batter</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/abishek porel.webp" alt="Player 5">
+        <div class="player-info">
+            <p class="player-name">ABHISHEK POREL</p>
+            <p class="player-role">Batter</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/tristan stubbs.webp" alt="Player 6">
+        <div class="player-info">
+            <p class="player-name">TRISTAN STUBBS</p>
+            <p class="player-role">Batter</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">View Details</button>
+            </div>
+        </div>
+    </div>
+    <div class="player-card">
+        <img src="static/images/dc player/mitchell marsh.webp" alt="Player 7">
+        <div class="player-info">
+            <p class="player-name">MITCHELL MARSH</p>
+            <p class="player-role">ALL ROUNDER</p>
+            <div class="card-body">
+                <p class="card-text"></p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-card">
+      <img src="static/images/dc player/anrich nortje.webp" alt="Player 8">
+      <div class="player-info">
+          <p class="player-name">ANRICH NORTJE</p>
+          <p class="player-role">Bowler</p>
+          <div class="card-body">
+              <p class="card-text"></p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8">View Details</button>
+          </div>
+      </div>
+  </div>
+  <div class="player-card">
+    <img src="static/images/dc player/kuldeep yadav.webp" alt="Player 9">
+    <div class="player-info">
+        <p class="player-name">KULDEEP YADAV</p>
+        <p class="player-role">Bowler</p>
+        <div class="card-body">
+            <p class="card-text"></p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9">View Details</button>
+        </div>
+    </div>
+</div>
+<div class="player-card">
+  <img src="static/images/dc player/khaleel ahmed.webp" alt="Player 10">
+  <div class="player-info">
+      <p class="player-name">KHALEEL AHMED</p>
+      <p class="player-role">Bowler</p>
+      <div class="card-body">
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10">View Details</button>
+      </div>
+  </div>
+</div>
+<div class="player-card">
+  <img src="static/images/dc player/ishant sharma.webp" alt="Player 11">
+  <div class="player-info">
+      <p class="player-name">ISHANT SHARMA</p>
+      <p class="player-role">Bowler</p>
+      <div class="card-body">
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11">View Details</button>
+      </div>
+  </div>
+</div>
+<div class="player-card">
+  <img src="static/images/dc player/mukesh kumar.webp" alt="Player 12">
+  <div class="player-info">
+      <p class="player-name">MUKESH KUMAR</p>
+      <p class="player-role">Bowler</p>
+      <div class="card-body">
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12">View Details</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock body %}

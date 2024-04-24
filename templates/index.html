@@ -1,0 +1,902 @@
+{% extends "base.html" %}
+{% block title %}{% endblock title %}
+{% block body %}
+<div class="container-fluid my-4 px-2">
+    {% comment %} crousel {% endcomment %}
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/images/IPL-2021-Who-took-the-first-hattrick-in-IPL-.webp" class="d-block w-100" alt="..." style="height:400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/images/Captains-of-IPL-teams.webp" class="d-block w-100" alt="..." style="height:400px;">
+          </div>
+          <div class="carousel-item">
+            <img src="static/images/Captains-of-IPL-teams.webp" class="d-block w-100" alt="..." style="height:400px;">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height: 10vh;">
+    <div class="text-center" style="border: solid black 2px; border-radius:40px; ">
+        <h2> CRICKET MATCH SCHEDULE 2024 </h2>
+    </div>
+</div>
+
+<div class="container">
+  
+  <div class="table-responsive">
+    <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Match No</th>
+        <th>Match Day</th>
+        <th>Date</th>
+        <th>Day</th>
+        <th>Start</th>
+        <th>Home</th>
+        <th>Away</th>
+        <th>Stadium</th>
+        <th>Win Team</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>22-Mar-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Chennai</td>
+        <td>Chennai Super Kings</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>23-Mar-24</td>
+        <td>Sat</td>
+        <td>Afternoon</td>
+        <td>Punjab Kings</td>
+        <td>Delhi Capitals</td>
+        <td>Mullanpur</td>
+        <td>Punjab Kings</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>2</td>
+        <td>23-Mar-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Kolkata</td>
+        <td>Kolkata Knight Riders</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>3</td>
+        <td>24-Mar-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Rajasthan Royals</td>
+        <td>Lucknow Super Giants</td>
+        <td>Jaipur</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>3</td>
+        <td>24-Mar-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Gujarat Titans</td>
+        <td>Mumbai Indians</td>
+        <td>Ahmedabad</td>
+        <td>Gujarat Titans</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>4</td>
+        <td>25-Mar-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Punjab Kings</td>
+        <td>Bengaluru</td>
+        <td>Royal Challengers Bengaluru</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>5</td>
+        <td>26-Mar-24</td>
+        <td>Tue</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Gujarat Titans</td>
+        <td>Chennai</td>
+        <td>Chennai Super Kings</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>6</td>
+        <td>27-Mar-24</td>
+        <td>Wed</td>
+        <td>Evening</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Mumbai Indians</td>
+        <td>Hyderabad</td>
+        <td>Sunrisers Hyderabad</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>7</td>
+        <td>28-Mar-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Rajasthan Royals</td>
+        <td>Delhi Capitals</td>
+        <td>Jaipur</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>8</td>
+        <td>29-Mar-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Bengaluru</td>
+        <td>Kolkata Knight Riders</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>9</td>
+        <td>30-Mar-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Punjab Kings</td>
+        <td>Lucknow</td>
+        <td>Lucknow Super Giants</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>10</td>
+        <td>31-Mar-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Gujarat Titans</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Ahmedabad</td>
+        <td>Gujarat Titans</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>10</td>
+        <td>31-Mar-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Delhi Capitals</td>
+        <td>Chennai Super Kings</td>
+        <td>Visakhapatnam</td>
+        <td>Delhi Capitals</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>11</td>
+        <td>01-Apr-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Mumbai Indians</td>
+        <td>Rajasthan Royals</td>
+        <td>Mumbai</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>12</td>
+        <td>02-Apr-24</td>
+        <td>Tue</td>
+        <td>Evening</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Lucknow Super Giants</td>
+        <td>Bengaluru</td>
+        <td>Lucknow Super Giants</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>13</td>
+        <td>03-Apr-24</td>
+        <td>Wed</td>
+        <td>Evening</td>
+        <td>Delhi Capitals</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Visakhapatnam</td>
+        <td>Kolkata Knight Riders</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>14</td>
+        <td>04-Apr-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Gujarat Titans</td>
+        <td>Punjab Kings</td>
+        <td>Ahmedabad</td>
+        <td>Punjab Kings</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>15</td>
+        <td>05-Apr-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Chennai Super Kings</td>
+        <td>Hyderabad</td>
+        <td>Sunrisers Hyderabad</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>16</td>
+        <td>06-Apr-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Rajasthan Royals</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Jaipur</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>17</td>
+        <td>07-Apr-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Mumbai Indians</td>
+        <td>Delhi Capitals</td>
+        <td>Mumbai</td>
+        <td>Mumbai Indians</td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>17</td>
+        <td>07-Apr-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Gujarat Titans</td>
+        <td>Lucknow</td>
+        <td>Lucknow Super Giants</td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>18</td>
+        <td>08-Apr-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Chennai</td>
+        <td>Chennai Super Kings</td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>19</td>
+        <td>09-Apr-24</td>
+        <td>Tue</td>
+        <td>Evening</td>
+        <td>Punjab Kings</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Mullanpur</td>
+        <td>Sunrisers Hyderabad</td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>20</td>
+        <td>10-Apr-24</td>
+        <td>Wed</td>
+        <td>Evening</td>
+        <td>Rajasthan Royals</td>
+        <td>Gujarat Titans</td>
+        <td>Jaipur</td>
+        <td>Gujarat Titans</td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>21</td>
+        <td>11-Apr-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Mumbai Indians</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Mumbai</td>
+        <td>Mumbai Indians</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>22</td>
+        <td>12-Apr-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Delhi Capitals</td>
+        <td>Lucknow</td>
+        <td>Delhi Capitals</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>23</td>
+        <td>13-Apr-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Punjab Kings</td>
+        <td>Rajasthan Royals</td>
+        <td>Mullanpur</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>24</td>
+        <td>14-Apr-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Lucknow Super Giants</td>
+        <td>Kolkata</td>
+        <td>Kolkata Knight Riders</td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>24</td>
+        <td>14-Apr-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Mumbai Indians</td>
+        <td>Chennai Super Kings</td>
+        <td>Mumbai</td>
+        <td>Chennai Super Kings</td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>25</td>
+        <td>15-Apr-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Bengaluru</td>
+        <td>Sunrisers Hyderabad</td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>26</td>
+        <td>18-Apr-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Rajasthan Royals</td>
+        <td>Kolkata</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>27</td>
+        <td>19-Apr-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Gujarat Titans</td>
+        <td> Delhi Capitals</td>
+        <td>Ahmedabad</td>
+        <td> Delhi Capitals</td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>28</td>
+        <td>20-Apr-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Punjab Kings </td>
+        <td>Mumbai Indians</td>
+        <td>Mullanpur</td>
+        <td>Mumbai Indians</td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>29</td>
+        <td>21-Apr-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Lucknow Super Giants </td>
+        <td>Chennai Super Kings</td>
+        <td>Lucknow</td>
+        <td>Lucknow Super Giants </td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>30</td>
+        <td>21-Apr-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Delhi Capitals </td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Delhi</td>
+        <td>Sunrisers Hyderabad</td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>31</td>
+        <td>21-Apr-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Kolkata</td>
+        <td>Kolkata Knight Riders</td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>31</td>
+        <td>21-Apr-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Punjab Kings</td>
+        <td>Gujarat Titans</td>
+        <td>Mullanpur</td>
+        <td>Gujarat Titans</td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>32</td>
+        <td>22-Apr-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Rajasthan Royals</td>
+        <td>Mumbai Indians</td>
+        <td>Jaipur</td>
+        <td>Rajasthan Royals</td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>33</td>
+        <td>23-Apr-24</td>
+        <td>Tue</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Lucknow Super Giants</td>
+        <td>Chennai</td>
+        <td>Lucknow Super Giants</td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>34</td>
+        <td>24-Apr-24</td>
+        <td>Wed</td>
+        <td>Evening</td>
+        <td>Delhi Capitals</td>
+        <td>Gujarat Titans</td>
+        <td>Delhi</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>35</td>
+        <td>25-Apr-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Hyderabad</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>36</td>
+        <td>26-Apr-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Punjab Kings</td>
+        <td>Kolkata</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>43</td>
+        <td>37</td>
+        <td>27-Apr-24</td>
+        <td>Sat</td>
+        <td>Afternoon</td>
+        <td>Delhi Capitals</td>
+        <td>Mumbai Indians</td>
+        <td>Delhi</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>44</td>
+        <td>37</td>
+        <td>27-Apr-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Rajasthan Royals</td>
+        <td>Lucknow</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>38</td>
+        <td>28-Apr-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Gujarat Titans</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Ahmedabad</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>38</td>
+        <td>28-Apr-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Chennai</td>
+        <td>--Pending--</td>
+      </tr>
+      <tr>
+        <td>47</td>
+        <td>39</td>
+        <td>29-Apr-24</td>
+        <td>Mon</td>
+        <td>Evening</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Delhi Capitals</td>
+        <td>Kolkata</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>48</td>
+        <td>40</td>
+        <td>30-Apr-24</td>
+        <td>Tue</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Mumbai Indians</td>
+        <td>Lucknow</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>49</td>
+        <td>41</td>
+        <td>01-May-24</td>
+        <td>Wed</td>
+        <td>Evening</td>
+        <td>Chennai Super Kings</td>
+        <td>Punjab Kings</td>
+        <td>Chennai</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>50</td>
+        <td>42</td>
+        <td>02-May-24</td>
+        <td>Thu</td>
+        <td>Evening</td>
+        <td>Sunrisers Hyderabad</td>
+        <td>Rajasthan Royals</td>
+        <td>Hyderabad</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>51</td>
+        <td>43</td>
+        <td>03-May-24</td>
+        <td>Fri</td>
+        <td>Evening</td>
+        <td>Mumbai Indians</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Mumbai</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>52</td>
+        <td>44</td>
+        <td>04-May-24</td>
+        <td>Sat</td>
+        <td>Evening</td>
+        <td>Royal Challengers Bengaluru</td>
+        <td>Gujarat Titans</td>
+        <td>Bengaluru</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>53</td>
+        <td>45</td>
+        <td>05-May-24</td>
+        <td>Sun</td>
+        <td>Afternoon</td>
+        <td>Punjab Kings</td>
+        <td>Chennai Super Kings</td>
+        <td>Dharamshala</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+        <td>54</td>
+        <td>45</td>
+        <td>05-May-24</td>
+        <td>Sun</td>
+        <td>Evening</td>
+        <td>Lucknow Super Giants</td>
+        <td>Kolkata Knight Riders</td>
+        <td>Lucknow</td>
+        <td>--Pending--</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>46</td>
+      <td>06-May-24</td>
+      <td>Mon</td>
+      <td>Evening</td>
+      <td>Mumbai Indians</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>Mumbai</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>56</td>
+      <td>47</td>
+      <td>07-May-24</td>
+      <td>Tue</td>
+      <td>Evening</td>
+      <td>Delhi Capitals</td>
+      <td>Rajasthan Royals</td>
+      <td>Delhi</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>57</td>
+      <td>48</td>
+      <td>08-May-24</td>
+      <td>Wed</td>
+      <td>Evening</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>Lucknow Super Giants</td>
+      <td>Hyderabad</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>58</td>
+      <td>49</td>
+      <td>09-May-24</td>
+      <td>Thu</td>
+      <td>Evening</td>
+      <td>Punjab Kings</td>
+      <td>Royal Challengers Bengaluru</td>
+      <td>Dharamshala</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>59</td>
+      <td>50</td>
+      <td>10-May-24</td>
+      <td>Fri</td>
+      <td>Evening</td>
+      <td>Gujarat Titans</td>
+      <td>Chennai Super Kings</td>
+      <td>Ahmedabad</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>60</td>
+      <td>51</td>
+      <td>11-May-24</td>
+      <td>Sat</td>
+      <td>Evening</td>
+      <td>Kolkata Knight Riders</td>
+      <td>Mumbai Indians</td>
+      <td>Kolkata</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>61</td>
+      <td>52</td>
+      <td>12-May-24</td>
+      <td>Sun</td>
+      <td>Afternoon</td>
+      <td>Chennai Super Kings</td>
+      <td>Rajasthan Royals</td>
+      <td>Chennai</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>62</td>
+      <td>52</td>
+      <td>12-May-24</td>
+      <td>Sun</td>
+      <td>Evening</td>
+      <td>Royal Challengers Bengaluru</td>
+      <td>Delhi Capitals</td>
+      <td>Bengaluru</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>63</td>
+      <td>53</td>
+      <td>13-May-24</td>
+      <td>Mon</td>
+      <td>Evening</td>
+      <td>Gujarat Titans</td>
+      <td>Kolkata Knight Riders</td>
+      <td>Ahmedabad</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>64</td>
+      <td>54</td>
+      <td>14-May-24</td>
+      <td>Tue</td>
+      <td>Evening</td>
+      <td>Delhi Capitals</td>
+      <td>Lucknow Super Giants</td>
+      <td>Delhi</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>65</td>
+      <td>55</td>
+      <td>15-May-24</td>
+      <td>Wed</td>
+      <td>Evening</td>
+      <td>Rajasthan Royals</td>
+      <td>Punjab Kings</td>
+      <td>Guwahati</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>66</td>
+      <td>56</td>
+      <td>16-May-24</td>
+      <td>Thu</td>
+      <td>Evening</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>Gujarat Titans</td>
+      <td>Hyderabad</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>67</td>
+      <td>57</td>
+      <td>17-May-24</td>
+      <td>Fri</td>
+      <td>Evening</td>
+      <td>Mumbai Indians</td>
+      <td>Lucknow Super Giants</td>
+      <td>Mumbai</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>68</td>
+      <td>58</td>
+      <td>18-May-24</td>
+      <td>Sat</td>
+      <td>Evening</td>
+      <td>Royal Challengers Bengaluru</td>
+      <td>Chennai Super Kings</td>
+      <td>Bengaluru</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>69</td>
+      <td>59</td>
+      <td>19-May-24</td>
+      <td>Sun</td>
+      <td>Afternoon</td>
+      <td>Sunrisers Hyderabad</td>
+      <td>Punjab Kings</td>
+      <td>Hyderabad</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+      <td>70</td>
+      <td>59</td>
+      <td>19-May-24</td>
+      <td>Sun</td>
+      <td>Evening</td>
+      <td>Rajasthan Royals</td>
+      <td>Kolkata Knight Riders</td>
+      <td>Guwahati</td>
+      <td>--Pending--</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>60</td>
+    <td>20-May-24</td>
+    <td>Mon</td>
+    <td></td>
+    <td colspan="3">Break Day</td>
+    <td></td>
+</tr>
+
+<tr>
+  <td>71</td>
+  <td>61</td>
+  <td>21-May-24</td>
+  <td>Tue</td>
+  <td>Evening</td>
+  <td colspan="2"><b>Qualifier 1</b></td>
+  <td>Ahmedabad</td>
+  <td>--Pending--</td>
+</tr>
+<tr>
+  <td>72</td>
+  <td>62</td>
+  <td>22-May-24</td>
+  <td>Wes</td>
+  <td>Evening</td>
+  <td colspan="2"><b>Eliminator </b></td>
+  <td>Ahmedabad</td>
+  <td>--Pending--</td>
+</tr>
+<tr>
+  <td></td>
+  <td>63</td>
+  <td>23-May-24</td>
+  <td>Thu</td>
+  <td></td>
+  <td colspan="3">Break Day</td>
+  <td> </td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>64</td>
+  <td>24-May-24</td>
+  <td>Fri</td>
+  <td>Evening</td>
+  <td colspan="2"><b>Qualifier 2</b></td>
+  <td>Chennai</td>
+  <td>--Pending--</td>
+</tr>
+<tr>
+  <td></td>
+  <td>65</td>
+  <td>25-May-24</td>
+  <td>Sat</td>
+  <td></td>
+  <td colspan="3">Break Day</td>
+  <td> </td>
+</tr>
+<tr>
+  <td>73</td>
+  <td>66</td>
+  <td>26-May-24</td>
+  <td>Sun</td>
+  <td>Evening</td>
+  <td colspan="2"><b>FINAL</b></td>
+  <td>Chennai</td>
+  <td>--Pending--</td>
+</tr>
+
+
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+{% endblock body %}
