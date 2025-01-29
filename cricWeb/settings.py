@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-^rbx@@su$y&d-*i2t#j911e%ph6=ckmevyu@^xy^@qsub@k-0u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cricweb-3.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['cricweb.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
